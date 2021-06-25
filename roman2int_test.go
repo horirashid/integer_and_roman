@@ -21,6 +21,13 @@ func TestRoman2Int02(t *testing.T) {
 func TestRoman2Int03(t *testing.T) {
 	number := RomanString2Int("DCCCLXXXVIII")
 	if number != 888 {
-		t.Errorf("Test02 is failed, error output : %d", number)
+		t.Errorf("Test03 is failed, error output : %d", number)
+	}
+}
+
+func TestRoman2Int04(t *testing.T) {
+	number := RomanString2Int("MD")
+	if number != 1500 {
+		t.Errorf("Test04 is failed, error output : %d", number)
 	}
 }
