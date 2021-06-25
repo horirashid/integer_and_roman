@@ -24,3 +24,10 @@ func TestInt2Roman03(t *testing.T) {
 		t.Errorf("Test03 is failed, error output : %s", number)
 	}
 }
+
+func TestInt2Roman04(t *testing.T) {
+	number := int_to_roman(1500)
+	if number != "MD" {
+		t.Errorf("Test04 is failed, error output : %s", number)
+	}
+}
